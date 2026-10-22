@@ -18,6 +18,6 @@ The site address is [https://mmbb1805.github.io/minbeom/](https://mmbb1805.githu
 - `style.css` — layout, theme, and print styles
 - `assets/favicon.svg` — icon
 - `assets/minbeom-kim.jpg` — profile portrait
-- `assets/Minbeom_Kim_CV.docx` — curriculum vitae download
+- `assets/Minbeom_Kim_CV.pdf` — curriculum vitae
 
 Education, research, publications, experience, the patent and technology transfer, awards, skills, and contact details are taken from that curriculum vitae.
