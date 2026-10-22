@@ -459,11 +459,9 @@ section + section { border-top: 1px solid var(--line); }
 
 .project-fund {
   margin: 0.45rem 0 0;
+  color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
-
-.project-fund em { color: var(--pine); font-style: normal; font-weight: 700; }
-.project-fund span { color: var(--muted); margin-left: 0.35rem; }
 
 .research-block,
 .thesis,
