@@ -264,7 +264,7 @@ a:hover { text-decoration-thickness: 2px; }
 
 .portrait img {
   display: block;
-  width: 16.5rem;
+  width: 13.2rem;
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
@@ -775,7 +775,7 @@ cite { font-style: italic; }
     gap: 1.1rem;
   }
   .hero-copy { grid-row: 2; }
-  .portrait img { width: clamp(8.25rem, 28vw, 11rem); }
+  .portrait img { width: clamp(6.6rem, 22.4vw, 8.8rem); }
   .hero-mark { width: 6.5rem; }
   .hero-mark svg { width: 3.4rem; }
   .hero-mark p { font-size: 0.75rem; }
@@ -867,7 +867,7 @@ cite { font-style: italic; }
   .hero-copy { grid-column: 1; grid-row: 1; }
 
   .portrait img {
-    width: 1.55in;
+    width: 1.24in;
     box-shadow: none;
     border: 0.75pt solid #ccc;
   }
