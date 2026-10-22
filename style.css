@@ -248,14 +248,19 @@ a:hover { text-decoration-thickness: 2px; }
   align-items: center;
 }
 
-.portrait {
+.hero-aside {
   grid-column: 2;
   grid-row: 1;
-  margin: 0;
-  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
 }
 
 .hero-copy { grid-column: 1; grid-row: 1; }
+
+.portrait { margin: 0; }
 
 .portrait img {
   display: block;
@@ -276,6 +281,28 @@ a:hover { text-decoration-thickness: 2px; }
     0 0 0 4px var(--bg),
     0 0 0 5px color-mix(in srgb, var(--pine) 55%, var(--line-strong)),
     0 18px 42px rgba(0, 0, 0, 0.45);
+}
+
+.hero-mark {
+  width: 7.25rem;
+  color: var(--pine);
+}
+
+.hero-mark svg {
+  display: block;
+  width: 4.5rem;
+  height: auto;
+  margin-inline: auto;
+}
+
+.hero-mark p {
+  margin: 0.3rem 0 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  text-align: center;
+  color: var(--muted);
 }
 
 .eyebrow,
@@ -740,11 +767,20 @@ cite { font-style: italic; }
   body.nav-open .site-nav { display: flex; }
   .site-nav a { font-size: 1.05rem; padding: 0.45rem 0; }
   .hero-grid { grid-template-columns: 1fr; }
-  .portrait,
+  .hero-aside,
   .hero-copy { grid-column: 1; }
-  .portrait { grid-row: 1; justify-self: start; }
+  .hero-aside {
+    grid-row: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.1rem;
+  }
   .hero-copy { grid-row: 2; }
   .portrait img { width: clamp(8.25rem, 28vw, 11rem); }
+  .hero-mark { width: 6.5rem; }
+  .hero-mark svg { width: 3.4rem; }
+  .hero-mark p { font-size: 0.75rem; }
   .scholar-link { margin-left: 0; }
 }
 
@@ -797,6 +833,7 @@ cite { font-style: italic; }
   }
 
   .site-header,
+  .hero-mark,
   .filters,
   .skip,
   .menu-btn,
@@ -822,10 +859,11 @@ cite { font-style: italic; }
     gap: 1rem 1.25rem;
   }
 
-  .portrait {
+  .hero-aside {
     grid-column: 2;
     grid-row: 1;
-    justify-self: end;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .hero-copy { grid-column: 1; grid-row: 1; }
